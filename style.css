@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color:antiquewhite ;
+}
+
+footer{
+    width: 100%;
+    background-color: #EBECEF;
+    padding: 48px 0;
+}
+.footercontent{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1240px;
+    margin: auto;
+}
+
+section{
+    background-color: grey;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(5, 1fr);
+}
+article{
+    margin: 0 16px;
+}
