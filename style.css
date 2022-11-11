@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
 body{
@@ -10,7 +11,12 @@ body{
     /*HEADER*/
 
         header{
-            background-color:antiquewhite ;
+            background: #FFFFFF;
+            position: sticky;
+            text-align: left;
+            width: 100%;
+            z-index: 1020;
+            box-shadow: rgb(20 35 85 / 15%) 0px 2px 6px 0;
         }
 
 
@@ -25,26 +31,53 @@ body{
             background-color: #EBECEF;
             padding: 48px 0;
         }
+
         .footercontent{
             display: flex;
             justify-content: space-between;
             max-width: 1240px;
-            margin: auto;
-        }
-
-        section{
-            display: grid;
-            grid-template-rows: repeat(3, auto);
-            grid-template-columns: repeat(5, 1fr);
+            margin: auto; /*Centers the section*/
             flex-flow: row wrap;
         }
 
-        section li{
-            margin-top: 8px;
-            margin-bottom: 8px;
-            font-size: small;
+        .footercontent a{
+            display: flex;
+            margin-top: 12px;
+            margin-bottom: 12px;
+            font-size: 12px;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
         }
-        article{
+
+        .footercontent article{
+            flex-basis: calc(25% - 32px);
+
+        }
+
+        .footercontent p{
+            display: flex;
+            font-size: 12px;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        #apps{
+            justify-content: center;
+        }
+
+        .appsredirect{
+            display: flex;
+            justify-content: center;
+        }
+
+        .footercontent img{
+            margin-right: 8px;
+        }
+
+
+        .footercontent article{
             margin: 0 16px;
         }
 
@@ -53,14 +86,11 @@ body{
             width: 100%;
             border-top: 1px solid #DCDDE0;
             margin: 48px auto;
-        }
-        .idk{
-            display: flex;
-            justify-content: center;
+            text-align: center;
         }
 
         .width{
-            width: 100%;
+            min-width: 100%;
         }
         .width p{
             font-size: 16px;
@@ -73,11 +103,6 @@ body{
 
         ul{
             list-style: none;
-        }
-        a{
-            text-decoration: none;
-            color: inherit;
-            margin: left;
         }
 
         .ColunaTituloFooter{
