@@ -20,11 +20,39 @@ footer{
 }
 
 section{
-    background-color: grey;
     display: grid;
     grid-template-rows: repeat(3, auto);
     grid-template-columns: repeat(5, 1fr);
+    flex-flow: row wrap;
 }
 article{
     margin: 0 16px;
+}
+
+.spacer{
+    height: 1px;
+    width: 100%;
+    border-top: 1px solid #DCDDE0;
+    margin: 48px auto;
+}
+.idk{
+    display: flex;
+    justify-content: center;
+}
+
+.width{
+    width: 100%;
+}
+.width p{
+    font-size: 16px;
+    line-height: 20px;
+text-align: center;
+color: #020309;
+margin: 0;
+  margin-bottom: 0px;
+margin-bottom: 24px;
+}
+
+ul{
+    list-style: none;
 }
