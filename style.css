@@ -3,56 +3,96 @@
     padding: 0;
 }
 
-header{
-    background-color:antiquewhite ;
+body{
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
 }
 
-footer{
-    width: 100%;
-    background-color: #EBECEF;
-    padding: 48px 0;
-}
-.footercontent{
-    display: flex;
-    justify-content: space-between;
-    max-width: 1240px;
-    margin: auto;
-}
+    /*HEADER*/
 
-section{
-    display: grid;
-    grid-template-rows: repeat(3, auto);
-    grid-template-columns: repeat(5, 1fr);
-    flex-flow: row wrap;
-}
-article{
-    margin: 0 16px;
-}
+        header{
+            background-color:antiquewhite ;
+        }
 
-.spacer{
-    height: 1px;
-    width: 100%;
-    border-top: 1px solid #DCDDE0;
-    margin: 48px auto;
-}
-.idk{
-    display: flex;
-    justify-content: center;
-}
 
-.width{
-    width: 100%;
-}
-.width p{
-    font-size: 16px;
-    line-height: 20px;
-text-align: center;
-color: #020309;
-margin: 0;
-  margin-bottom: 0px;
-margin-bottom: 24px;
-}
 
-ul{
-    list-style: none;
-}
+
+
+
+    /*FOOTER*/
+
+        footer{
+            width: 100%;
+            background-color: #EBECEF;
+            padding: 48px 0;
+        }
+        .footercontent{
+            display: flex;
+            justify-content: space-between;
+            max-width: 1240px;
+            margin: auto;
+        }
+
+        section{
+            display: grid;
+            grid-template-rows: repeat(3, auto);
+            grid-template-columns: repeat(5, 1fr);
+            flex-flow: row wrap;
+        }
+
+        section li{
+            margin-top: 8px;
+            margin-bottom: 8px;
+            font-size: small;
+        }
+        article{
+            margin: 0 16px;
+        }
+
+        .spacer{
+            height: 1px;
+            width: 100%;
+            border-top: 1px solid #DCDDE0;
+            margin: 48px auto;
+        }
+        .idk{
+            display: flex;
+            justify-content: center;
+        }
+
+        .width{
+            width: 100%;
+        }
+        .width p{
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            color: #020309;
+            margin: 0;
+            margin-bottom: 24px;
+        }
+
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+            margin: left;
+        }
+
+        .ColunaTituloFooter{
+            font-size: 20px;
+            line-height: 22px;
+            font-weight: 500;
+            color: #020309;
+            margin: 0;
+            margin-bottom: 16px;
+            margin-top: 16px;
+        }
+
+        #ColunaTituloAbaixo{
+            margin-top: 48px;
+        } 
+
+
+
