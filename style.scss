@@ -48,8 +48,9 @@
                 border-radius: 4px;
                 background: #0071CE;
                 font-weight: 600;
-                font-style: italic; 
+                font-style: italic;
                 font-size: 18px;
+                margin-left: 0;
             }
 
             a{
@@ -61,9 +62,9 @@
             }
 
             span{
+                font:inherit;
                 font-size: 14px;
                 margin-left: 16px;
-                font:inherit;
             }
 
             img{

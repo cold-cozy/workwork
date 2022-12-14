@@ -46,6 +46,7 @@ main .CarrosNovos #CarrosNovos {
   font-weight: 600;
   font-style: italic;
   font-size: 18px;
+  margin-left: 0;
 }
 main .CarrosNovos a {
   font-weight: 700;
@@ -55,9 +56,9 @@ main .CarrosNovos a {
   border-bottom: solid 2px black;
 }
 main .CarrosNovos span {
+  font: inherit;
   font-size: 14px;
   margin-left: 16px;
-  font: inherit;
 }
 main .CarrosNovos img {
   width: 16px;
