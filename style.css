@@ -25,6 +25,7 @@ main section {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background: #0071CE;
   color: white;
   padding: 16px;
@@ -49,11 +50,26 @@ main a:hover {
   border-color: #FFFFFF;
 }
 
+@media (max-width: 576px) {
+  main section {
+    flex-direction: column;
+    height: 110px;
+  }
+  main section h4 {
+    margin-bottom: 16px;
+  }
+  main section a {
+    width: 100%;
+  }
+}
 /*FOOTER*/
 footer {
   width: 100%;
   background-color: #EBECEF;
   padding: 48px 0;
+}
+footer section {
+  flex-flow: row wrap;
 }
 footer .footercontent {
   display: flex;
