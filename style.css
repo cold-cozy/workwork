@@ -25,15 +25,18 @@ header {
 
 /*MAIN*/
 main .CarrosNovos {
-  display: flex;
   background-color: #bde0ff;
   position: -webkit-sticky;
   position: sticky;
   width: 100%;
   padding: 16px;
+  top: 66px;
+}
+main .CarrosNovos div {
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1178px;
+  margin: 0 auto;
 }
 main .CarrosNovos #CarrosNovos {
   color: white;
@@ -43,6 +46,13 @@ main .CarrosNovos #CarrosNovos {
   font-weight: 600;
   font-style: italic;
   font-size: 18px;
+}
+main .CarrosNovos a {
+  font-weight: 700;
+  color: black;
+  font-size: 14px;
+  height: 24px;
+  border-bottom: solid 2px black;
 }
 main .CarrosNovos span {
   font-size: 14px;

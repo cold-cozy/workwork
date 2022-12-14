@@ -29,14 +29,18 @@
     main{
 
         .CarrosNovos{
-            display: flex;
             background-color: #bde0ff;
             position:sticky;
             width:100%;
             padding:16px;
-            align-items: center;
-            justify-content: space-between;
-            max-width: 1178px;
+            top: 66px;
+
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin:0 auto;
+            }
 
             #CarrosNovos{
                 color: white;
@@ -46,6 +50,14 @@
                 font-weight: 600;
                 font-style: italic; 
                 font-size: 18px;
+            }
+
+            a{
+                font-weight: 700;
+                color:black;
+                font-size: 14px;
+                height: 24px;
+                border-bottom: solid 2px black;
             }
 
             span{
