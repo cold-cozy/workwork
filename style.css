@@ -87,7 +87,7 @@ body{
         
         .spacer{
             height: 1px;
-            width: 100%;
+            width: 50%;
             border-top: 1px solid #DCDDE0;
             margin: 48px auto;
             text-align: center;
