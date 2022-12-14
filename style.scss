@@ -55,6 +55,7 @@
                 border-color: #FFFFFF;
             }
         }
+
     }
 
 
@@ -120,7 +121,6 @@
                     margin-right: 8px;
                 }
 
-
                 ul{
                     list-style: none;
                 }
@@ -149,14 +149,16 @@
                 text-align: center;
             }
 
-            .footerbottom, .footerbottom p{
+            .footerbottom{
                 min-width: 100%;
-                font-size: 16px;
-                line-height: 20px;
-                text-align: center;
-                margin: 0;
-                margin-bottom: 24px;
-                justify-content: center;
+
+                p{
+                    font-size: 16px;
+                    line-height: 20px;
+                    text-align: center;
+                    margin-bottom: 24px;
+                    justify-content: center;
+                }
 
                 //Google play e App Store
                 div{
