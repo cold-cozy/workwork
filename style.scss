@@ -20,7 +20,43 @@
             box-shadow: rgb(20 35 85 / 15%) 0px 2px 6px 0;
         }
 
+    /*MAIN*/
 
+    main{
+
+        section{
+            display:flex;
+            justify-content: center; //horizontal
+            align-items: center; //vertical
+            background: #0071CE;
+            color:white;
+            padding: 16px;
+            height: 92px;
+        }
+
+        h4{
+            margin-right: 24px;
+            font:inherit;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+            border: 2px solid white;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 16px;  
+            padding: 12px 46px;   
+        }
+
+        a:hover{
+            padding: 9px 43px;
+            border: 5px solid;
+            border-color: #FFFFFF;
+        }
+
+
+    }
 
 
 
@@ -31,86 +67,87 @@
             width: 100%;
             background-color: #EBECEF;
             padding: 48px 0;
-        }
-
-        .footercontent{
-            display: flex;
-            justify-content: space-between;
-            max-width: 1240px;
-            margin: auto; /*Centers the section*/
-            flex-flow: row wrap;
-        }
-
-        .footercontent a{
-            display: flex;
-            margin-top: 12px;
-            margin-bottom: 12px;
-            font-size: 12px;
-            align-items: center;
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .footercontent article{
-            margin: 0 16px;
-            flex-basis: calc(25% - 32px);
-        }
-
-        .footercontent p{
-            display: flex;
-            font-size: 12px;
-            align-items: center;
-            color: inherit;
-        }
-
-        .footercontent img{
-            margin-right: 8px;
-        }
-
-
-        .footercontent ul{
-            list-style: none;
-        }
-
-        .ColunaTituloFooter{
-            font-size: 20px;
-            line-height: 22px;
-            font-weight: 500;
-            color: #020309;
-            margin: 0;
-            margin-bottom: 16px;
-            margin-top: 16px;
-        }
-
-        #ColunaTituloAbaixo{
-            margin-top: 48px;
-        } 
         
-        .spacer{
-            height: 1px;
-            width: 50%;
-            border-top: 1px solid #DCDDE0;
-            margin: 48px auto;
-            text-align: center;
-        }
 
-        .footerbottom, .footerbottom p{
-            min-width: 100%;
-            font-size: 16px;
-            line-height: 20px;
-            text-align: center;
-            margin: 0;
-            margin-bottom: 24px;
-        }
+            .footercontent{
+                display: flex;
+                justify-content: space-between;
+                max-width: 1240px;
+                margin: auto; /*Centers the section*/
+                flex-flow: row wrap;
+            }
 
-        #apps{
-            justify-content: center;
-        }
+            .footercontent a{
+                display: flex;
+                margin-top: 12px;
+                margin-bottom: 12px;
+                font-size: 12px;
+                align-items: center;
+                text-decoration: none;
+                color: inherit;
+            }
 
-        .appsredirect{
-            display: flex;
-            justify-content: center;
-        }
+            .footercontent article{
+                margin: 0 16px;
+                flex-basis: calc(25% - 32px);
+            }
+
+            .footercontent p{
+                display: flex;
+                font-size: 12px;
+                align-items: center;
+                color: inherit;
+            }
+
+            .footercontent img{
+                margin-right: 8px;
+            }
+
+
+            .footercontent ul{
+                list-style: none;
+            }
+
+            .ColunaTituloFooter{
+                font-size: 20px;
+                line-height: 22px;
+                font-weight: 500;
+                color: #020309;
+                margin: 0;
+                margin-bottom: 16px;
+                margin-top: 16px;
+            }
+
+            #ColunaTituloAbaixo{
+                margin-top: 48px;
+            } 
+            
+            .spacer{
+                height: 1px;
+                width: 50%;
+                border-top: 1px solid #DCDDE0;
+                margin: 48px auto;
+                text-align: center;
+            }
+
+            .footerbottom, .footerbottom p{
+                min-width: 100%;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+                margin: 0;
+                margin-bottom: 24px;
+            }
+
+            #apps{
+                justify-content: center;
+            }
+
+            .appsredirect{
+                display: flex;
+                justify-content: center;
+            }
+        }   
 
     
 

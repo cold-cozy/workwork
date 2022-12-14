@@ -20,22 +20,49 @@ header {
   box-shadow: rgba(20, 35, 85, 0.15) 0px 2px 6px 0;
 }
 
+/*MAIN*/
+main section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0071CE;
+  color: white;
+  padding: 16px;
+  height: 92px;
+}
+main h4 {
+  margin-right: 24px;
+  font: inherit;
+}
+main a {
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 12px 46px;
+}
+main a:hover {
+  padding: 9px 43px;
+  border: 5px solid;
+  border-color: #FFFFFF;
+}
+
 /*FOOTER*/
 footer {
   width: 100%;
   background-color: #EBECEF;
   padding: 48px 0;
 }
-
-.footercontent {
+footer .footercontent {
   display: flex;
   justify-content: space-between;
   max-width: 1240px;
   margin: auto; /*Centers the section*/
   flex-flow: row wrap;
 }
-
-.footercontent a {
+footer .footercontent a {
   display: flex;
   margin-top: 12px;
   margin-bottom: 12px;
@@ -44,28 +71,23 @@ footer {
   text-decoration: none;
   color: inherit;
 }
-
-.footercontent article {
+footer .footercontent article {
   margin: 0 16px;
   flex-basis: calc(25% - 32px);
 }
-
-.footercontent p {
+footer .footercontent p {
   display: flex;
   font-size: 12px;
   align-items: center;
   color: inherit;
 }
-
-.footercontent img {
+footer .footercontent img {
   margin-right: 8px;
 }
-
-.footercontent ul {
+footer .footercontent ul {
   list-style: none;
 }
-
-.ColunaTituloFooter {
+footer .ColunaTituloFooter {
   font-size: 20px;
   line-height: 22px;
   font-weight: 500;
@@ -74,20 +96,17 @@ footer {
   margin-bottom: 16px;
   margin-top: 16px;
 }
-
-#ColunaTituloAbaixo {
+footer #ColunaTituloAbaixo {
   margin-top: 48px;
 }
-
-.spacer {
+footer .spacer {
   height: 1px;
   width: 50%;
   border-top: 1px solid #DCDDE0;
   margin: 48px auto;
   text-align: center;
 }
-
-.footerbottom, .footerbottom p {
+footer .footerbottom, footer .footerbottom p {
   min-width: 100%;
   font-size: 16px;
   line-height: 20px;
@@ -95,12 +114,10 @@ footer {
   margin: 0;
   margin-bottom: 24px;
 }
-
-#apps {
+footer #apps {
   justify-content: center;
 }
-
-.appsredirect {
+footer .appsredirect {
   display: flex;
   justify-content: center;
 }/*# sourceMappingURL=style.css.map */
