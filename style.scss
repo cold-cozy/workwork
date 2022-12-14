@@ -3,6 +3,10 @@
         margin: 0;
         padding: 0;
         border: 0;
+
+        a{
+            text-decoration: none;
+        }
     }
 
     body{
@@ -23,6 +27,40 @@
     /*MAIN*/
 
     main{
+
+        .CarrosNovos{
+            display: flex;
+            background-color: #bde0ff;
+            position:sticky;
+            width:100%;
+            padding:16px;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1178px;
+
+            #CarrosNovos{
+                color: white;
+                padding: 8px;
+                border-radius: 4px;
+                background: #0071CE;
+                font-weight: 600;
+                font-style: italic; 
+                font-size: 18px;
+            }
+
+            span{
+                font-size: 14px;
+                margin-left: 16px;
+                font:inherit;
+            }
+
+            img{
+                width: 16px;
+                height: 16px;
+                margin-left: 32px;
+            }
+        }
+
 
         .BarraAzul{
             display:flex;

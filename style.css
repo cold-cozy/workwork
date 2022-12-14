@@ -4,6 +4,9 @@
   padding: 0;
   border: 0;
 }
+* a {
+  text-decoration: none;
+}
 
 body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -21,6 +24,36 @@ header {
 }
 
 /*MAIN*/
+main .CarrosNovos {
+  display: flex;
+  background-color: #bde0ff;
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  padding: 16px;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1178px;
+}
+main .CarrosNovos #CarrosNovos {
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  background: #0071CE;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 18px;
+}
+main .CarrosNovos span {
+  font-size: 14px;
+  margin-left: 16px;
+  font: inherit;
+}
+main .CarrosNovos img {
+  width: 16px;
+  height: 16px;
+  margin-left: 32px;
+}
 main .BarraAzul {
   display: flex;
   justify-content: center;
