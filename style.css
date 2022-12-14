@@ -21,7 +21,7 @@ header {
 }
 
 /*MAIN*/
-main section {
+main .BarraAzul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,11 +31,11 @@ main section {
   padding: 16px;
   height: 92px;
 }
-main h4 {
+main .BarraAzul h4 {
   margin-right: 24px;
   font: inherit;
 }
-main a {
+main .BarraAzul a {
   color: white;
   text-decoration: none;
   border: 2px solid white;
@@ -44,7 +44,7 @@ main a {
   font-size: 16px;
   padding: 12px 46px;
 }
-main a:hover {
+main .BarraAzul a:hover {
   padding: 9px 43px;
   border: 5px solid;
   border-color: #FFFFFF;
@@ -67,9 +67,7 @@ footer {
   width: 100%;
   background-color: #EBECEF;
   padding: 48px 0;
-}
-footer section {
-  flex-flow: row wrap;
+  justify-content: center;
 }
 footer .footercontent {
   display: flex;
@@ -103,7 +101,7 @@ footer .footercontent img {
 footer .footercontent ul {
   list-style: none;
 }
-footer .ColunaTituloFooter {
+footer h6 {
   font-size: 20px;
   line-height: 22px;
   font-weight: 500;
@@ -115,7 +113,7 @@ footer .ColunaTituloFooter {
 footer #ColunaTituloAbaixo {
   margin-top: 48px;
 }
-footer .spacer {
+footer span {
   height: 1px;
   width: 50%;
   border-top: 1px solid #DCDDE0;
@@ -129,11 +127,9 @@ footer .footerbottom, footer .footerbottom p {
   text-align: center;
   margin: 0;
   margin-bottom: 24px;
-}
-footer #apps {
   justify-content: center;
 }
-footer .appsredirect {
+footer .footerbottom div, footer .footerbottom p div {
   display: flex;
   justify-content: center;
 }/*# sourceMappingURL=style.css.map */
