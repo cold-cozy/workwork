@@ -16,42 +16,116 @@ body {
 }
 
 /*HEADER*/
-header {
-  position: -webkit-sticky;
-  position: sticky;
-  background: #FFFFFF;
-  position: sticky;
-  text-align: left;
-  width: 100%;
-  z-index: 1020;
-  box-shadow: rgba(20, 35, 85, 0.15) 0px 2px 6px 0;
+/*header{
+    background:white;
+    position: sticky;
+    text-align: left;
+    width: 100%;
+    box-shadow: rgb(20 35 85 / 15%) 0px 2px 6px 0;
+    top:0px;
+    z-index: 1020;
+
+    #headercontent{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding:0 24px;
+
+        div{
+            display: flex;
+        }
+
+        .headerleft{
+            display: flex;
+            align-items: center;
+
+            img{
+                margin-right: 8px;
+            }
+
+            a{ 
+                display: inline-block;
+                width: 202px;
+            }
+
+            span{
+                color: #020309;
+                display: block;
+                font-size: 13px;
+                font-weight: 600;
+                line-height: 11px;
+                text-align: right;
+            }
+
+            .badge{
+                margin-left: 16px;
+
+                p{
+                    margin-right: 8px;
+                    font-weight: 700;
+                    color: #398B72;
+                    margin: 0;
+                    margin-right: 0px;
+                    display: inline-block;
+                    width: 120px;
+                    font-size: 10px;
+                    line-height: 16px;
+                }
+            }
+        }
+
+        ul{
+            display: flex;
+            padding: 13px 0;
+            height: 100%;
+            align-items: center;
+            margin-left: 15px;
+        }
+    }
+
+    nav{
+
+        a, span,img{
+            padding: 0 15px;
+            color: #66676C;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+        }
+
+        button{
+            padding: 3px 8px;
+            align-items: center;
+            border: 0;
+            border-radius: 0;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-flex;
+            justify-content: center;
+            margin: 0;
+            min-height: 40px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+            background-color: #0071CE;
+            border: 5px solid #0071CE;
+            border-radius: 4px;
+            color: #FFFFFF;
+
+            &:hover{
+                background-color: white;
+                color:#0071CE
+            }
+        }
+
+    }
+
+
 }
-header #headercontent {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 0 24px;
-}
-header #headercontent .headerleft {
-  display: flex;
-  align-items: center;
-}
-header #headercontent .headerleft img {
-  margin-right: 8px;
-}
-header #headercontent .headerleft a {
-  display: inline-block;
-  width: 202px;
-}
-header #headercontent .headerleft span {
-  color: #020309;
-  display: block;
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 11px;
-  text-align: right;
-}
+
 /*MAIN*/
 main .CarrosNovos {
   background-color: #bde0ff;
