@@ -114,22 +114,51 @@
         }
         
         .MainBottom{
-            .ListasMain{
-                line-height: 26px;
-                font-weight: 500;
-                font-size: 11px;
+            display:flex;
+            flex-direction: column;
+            max-width: 1180px;
+            margin: 0 auto;
 
-                a{
-                    font-size: 11px;
+            .ListasMain{
+                padding: 0 8px;
+
+                h4{
+                    line-height: 26px;
                     font-weight: 700;
-                    color: #66676C;
-                    text-decoration: underline;
+                    font-size: 11px;
+                }
+
+                ol{
+                    padding-bottom: 16px;
+
+                    li{
+                        display: inline-block;
+                        margin-right: 16px;
+                        height: 24px;
+
+                        a{
+                            font-size: 10px;
+                            font-weight: 700;
+                            color: #66676C;
+                            text-decoration: underline;
+                        }
+                    }
                 }
             }
         }
 
-    }
+            .Anuncios{
+                display:flex;
+                justify-content: space-between;
+                padding:16px;
 
+                img{
+                    max-width: calc(100% - 16px);
+                    max-height: 360px;
+                    border-radius: 4px;
+                }
+            }
+        }
 
     @media (max-width: 576px){
 
