@@ -26,7 +26,32 @@ header {
   z-index: 1020;
   box-shadow: rgba(20, 35, 85, 0.15) 0px 2px 6px 0;
 }
-
+header #headercontent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 24px;
+}
+header #headercontent .headerleft {
+  display: flex;
+  align-items: center;
+}
+header #headercontent .headerleft img {
+  margin-right: 8px;
+}
+header #headercontent .headerleft a {
+  display: inline-block;
+  width: 202px;
+}
+header #headercontent .headerleft span {
+  color: #020309;
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 11px;
+  text-align: right;
+}
 /*MAIN*/
 main .CarrosNovos {
   background-color: #bde0ff;

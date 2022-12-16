@@ -27,6 +27,43 @@
         width: 100%;
         z-index: 1020;
         box-shadow: rgb(20 35 85 / 15%) 0px 2px 6px 0;
+
+        #headercontent{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding:0 24px;
+
+            .headerleft{
+                display: flex;
+                align-items: center;
+
+                img{
+                    margin-right: 8px;
+                }
+
+                a{ 
+                    display: inline-block;
+                    width: 202px;
+                }
+
+                span{
+                    color: #020309;
+                    display: block;
+                    font-size: 13px;
+                    font-weight: 600;
+                    line-height: 11px;
+                    text-align: right;
+                }
+
+                .badge{
+                    
+                }
+            }
+        }
+
+
     }
 
     /*MAIN*/
