@@ -1,23 +1,22 @@
-    *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        border: 0;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
 
 
-        a{
-            text-decoration: none;
-        }
-
-        ol, ul {
-            list-style: none;
-          }
+    a{
+        text-decoration: none;
     }
 
-
-    body{
-        font-family: system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    ol, ul {
+        list-style: none;
     }
+}
+
+body{
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
 
     /*HEADER*/
 
@@ -99,6 +98,10 @@
                 margin:0 auto;
             }
 
+            .pesquisa-tablet{
+                display: none;
+            }
+
             #CarrosNovos{
                 color: white;
                 padding: 8px;
@@ -134,6 +137,7 @@
 
         .BarraAzul{
             display:flex;
+            flex-direction: row;
             justify-content: center; //horizontal
             align-items: center; //vertical
             text-align: center;
@@ -197,9 +201,10 @@
                 }
             }
         }
+    
+    }
 
             .Anuncios{
-                display:flex;
                 justify-content: space-between;
                 padding:16px;
 
@@ -209,23 +214,20 @@
                     border-radius: 4px;
                 }
             }
-        }
 
     /*FOOTER*/
 
         footer{
-            display:flex;
-            width: 100%;
+            display: block;
+            width: 100% ;
             background-color: #EBECEF;
             padding: 48px 0;
-            justify-content: center;
-            flex-flow: column wrap;
 
             .footercontent{
                 display: flex;
                 justify-content: space-between;
                 max-width: 1240px;
-                margin: auto; /*Centers the section*/
+                margin:auto; /*Centers the section*/
                 flex-flow: row wrap;
 
                 a{
@@ -304,40 +306,64 @@
             }
         }   
 
-        /*MEDIA QUERRIES*/
+    /*MEDIA QUERRIES*/
 
-        @media (max-width: 576px){
-
-            main{
+    @media (max-width: 576px){
+        main{
+            .BarraAzul{
+                flex-direction: column;
+                height: 110px;
+                h4{
+                    margin-bottom: 16px;
+                }
                 
-                section{
-                    flex-direction: column;
-                    height: 110px;
-    
-                    h4{
-                        margin-bottom: 16px;
-                    }
-                    
-                    a{
-                        width: 100%;
-                    }
-    
+                a{
+                    width: 100%;
                 }
                 
             }
+        }
 
-            footer{
-                .footercontent{
-                    flex-flow: column wrap;
-                    flex-basis: 100%;
-                    margin: 16px 16px;
+        footer{
+            .footercontent{
+                flex-flow: column wrap;
+                flex-basis: 100%;
+                margin: 16px 16px;
 
-                    span{
-                        width: 100%;
-                    }
-                  }
+                span{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 780px){
+
+            .pesquisa-desktop{
+                display: none;
+            }
+            .pesquisa-tablet{
+                display: inline-block!important;
+                width: 100%;
+                text-align: right;
+            }
+
+            .Anuncios{
+                overflow: scroll;
+                white-space: nowrap;
+                padding: 16px 8px;
+
+                img{
+                    max-height: 335px;
+                    max-width: 100%;
+                    margin: 0 8px;
                 }
             }
 
+    }
 
-        
+    @media (min-width: 781px){
+        .Anuncios{
+            display:flex;
+        }
+    }

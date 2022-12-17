@@ -85,6 +85,9 @@ main .CarrosNovos div {
   justify-content: space-between;
   margin: 0 auto;
 }
+main .CarrosNovos .pesquisa-tablet {
+  display: none;
+}
 main .CarrosNovos #CarrosNovos {
   color: white;
   padding: 8px;
@@ -114,6 +117,7 @@ main .CarrosNovos img {
 }
 main .BarraAzul {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -168,12 +172,12 @@ main .MainBottom .ListasMain ol li a {
   color: #66676C;
   text-decoration: underline;
 }
-main .Anuncios {
-  display: flex;
+
+.Anuncios {
   justify-content: space-between;
   padding: 16px;
 }
-main .Anuncios img {
+.Anuncios img {
   max-width: calc(100% - 16px);
   max-height: 360px;
   border-radius: 4px;
@@ -181,12 +185,10 @@ main .Anuncios img {
 
 /*FOOTER*/
 footer {
-  display: flex;
+  display: block;
   width: 100%;
   background-color: #EBECEF;
   padding: 48px 0;
-  justify-content: center;
-  flex-flow: column wrap;
 }
 footer .footercontent {
   display: flex;
@@ -257,14 +259,14 @@ footer .footerbottom div {
 
 /*MEDIA QUERRIES*/
 @media (max-width: 576px) {
-  main section {
+  main .BarraAzul {
     flex-direction: column;
     height: 110px;
   }
-  main section h4 {
+  main .BarraAzul h4 {
     margin-bottom: 16px;
   }
-  main section a {
+  main .BarraAzul a {
     width: 100%;
   }
   footer .footercontent {
@@ -274,5 +276,30 @@ footer .footerbottom div {
   }
   footer .footercontent span {
     width: 100%;
+  }
+}
+@media (max-width: 780px) {
+  .pesquisa-desktop {
+    display: none;
+  }
+  .pesquisa-tablet {
+    display: inline-block !important;
+    width: 100%;
+    text-align: right;
+  }
+  .Anuncios {
+    overflow: scroll;
+    white-space: nowrap;
+    padding: 16px 8px;
+  }
+  .Anuncios img {
+    max-height: 335px;
+    max-width: 100%;
+    margin: 0 8px;
+  }
+}
+@media (min-width: 781px) {
+  .Anuncios {
+    display: flex;
   }
 }/*# sourceMappingURL=style.css.map */
