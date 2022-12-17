@@ -20,350 +20,350 @@ body{
 
     /*HEADER*/
 
-    header{
-        background:white;
-        position: sticky;
-        text-align: left;
+header{
+    background:white;
+    position: sticky;
+    text-align: left;
+    width: 100%;
+    box-shadow: rgb(20 35 85 / 15%) 0px 2px 6px 0;
+    top:0px;
+    z-index: 1020;
+
+    #headercontent{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
-        box-shadow: rgb(20 35 85 / 15%) 0px 2px 6px 0;
-        top:0px;
-        z-index: 1020;
-
-        #headercontent{
-            display:flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            padding:0 24px;
-        }
-
-        nav{
-            display: flex;
-            a, span,img{
-                padding: 0 15px;
-                color: #66676C;
-                font-size: 13px;
-                display: flex;
-                align-items: center;
-            }
-
-            button{
-                padding: 3px 8px;
-                align-items: center;
-                border: 0;
-                border-radius: 0;
-                box-sizing: border-box;
-                color: #FFFFFF;
-                cursor: pointer;
-                display: inline-flex;
-                justify-content: center;
-                margin: 0;
-                min-height: 40px;
-                text-decoration: none;
-                font-weight: 700;
-                font-size: 14px;
-                line-height: 20px;
-                background-color: #0071CE;
-                border: 5px solid #0071CE;
-                border-radius: 4px;
-                color: #FFFFFF;
-
-                &:hover{
-                    background-color: white;
-                    color:#0071CE
-                }
-            }
-            
-        }
-
-
+        padding:0 24px;
     }
 
-    /*MAIN*/
-
-    main{
-
-        .CarrosNovos{
-            background-color: #bde0ff;
-            position:sticky;
-            width:100%;
-            padding:16px;
-            top: 66px;
-            z-index: 999;
-
-            div{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                margin:0 auto;
-            }
-
-            .pesquisa-tablet{
-                display: none;
-            }
-
-            #CarrosNovos{
-                color: white;
-                padding: 8px;
-                border-radius: 4px;
-                background: #0071CE;
-                font-weight: 600;
-                font-style: italic;
-                font-size: 18px;
-                margin-left: 0;
-            }
-
-            a{
-                font-weight: 700;
-                color:black;
-                font-size: 14px;
-                height: 24px;
-                border-bottom: solid 2px black;
-            }
-
-            span{
-                font:inherit;
-                font-size: 14px;
-                margin-left: 16px;
-            }
-
-            img{
-                width: 16px;
-                height: 16px;
-                margin-left: 32px;
-            }
+    nav{
+        display: flex;
+        a, span,img{
+            padding: 0 15px;
+            color: #66676C;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
         }
 
+        button{
+            padding: 3px 8px;
+            align-items: center;
+            border: 0;
+            border-radius: 0;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-flex;
+            justify-content: center;
+            margin: 0;
+            min-height: 40px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+            background-color: #0071CE;
+            border: 5px solid #0071CE;
+            border-radius: 4px;
+            color: #FFFFFF;
 
-        .BarraAzul{
-            display:flex;
-            flex-direction: row;
-            justify-content: center; //horizontal
-            align-items: center; //vertical
-            text-align: center;
-            background: #0071CE;
-            color:white;
-            padding: 16px;
-            height: 92px;
-
-            h4{
-                margin-right: 24px;
-                font:inherit;
-            }
-
-            a{
-                color: white;
-                text-decoration: none;
-                border: 2px solid white;
-                border-radius: 4px;
-                font-weight: 700;
-                font-size: 16px;  
-                padding: 12px 46px;   
-            }
-
-            a:hover{
-                padding: 9px 43px;
-                border: 5px solid;
-                border-color: #FFFFFF;
+            &:hover{
+                background-color: white;
+                color:#0071CE
             }
         }
         
-        .MainBottom{
-            display:flex;
-            flex-direction: column;
-            max-width: 1180px;
-            margin: 0 auto;
+    }
 
-            .ListasMain{
-                padding: 0 8px;
 
-                h4{
-                    line-height: 26px;
-                    font-weight: 700;
-                    font-size: 11px;
-                }
+}
 
-                ol{
-                    padding-bottom: 16px;
+/*MAIN*/
 
-                    li{
-                        display: inline-block;
-                        margin-right: 16px;
-                        height: 24px;
+main{
 
-                        a{
-                            font-size: 11px;
-                            font-weight: 700;
-                            color: #66676C;
-                            text-decoration: underline;
-                        }
+    .CarrosNovos{
+        background-color: #bde0ff;
+        position:sticky;
+        width:100%;
+        padding:16px;
+        top: 66px;
+        z-index: 999;
+
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin:0 auto;
+        }
+
+        .pesquisa-tablet{
+            display: none;
+        }
+
+        #CarrosNovos{
+            color: white;
+            padding: 8px;
+            border-radius: 4px;
+            background: #0071CE;
+            font-weight: 600;
+            font-style: italic;
+            font-size: 18px;
+            margin-left: 0;
+        }
+
+        a{
+            font-weight: 700;
+            color:black;
+            font-size: 14px;
+            height: 24px;
+            border-bottom: solid 2px black;
+        }
+
+        span{
+            font:inherit;
+            font-size: 14px;
+            margin-left: 16px;
+        }
+
+        img{
+            width: 16px;
+            height: 16px;
+            margin-left: 32px;
+        }
+    }
+
+
+    .BarraAzul{
+        display:flex;
+        flex-direction: row;
+        justify-content: center; //horizontal
+        align-items: center; //vertical
+        text-align: center;
+        background: #0071CE;
+        color:white;
+        padding: 16px;
+        height: 92px;
+
+        h4{
+            margin-right: 24px;
+            font:inherit;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+            border: 2px solid white;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 16px;  
+            padding: 12px 46px;   
+        }
+
+        a:hover{
+            padding: 9px 43px;
+            border: 5px solid;
+            border-color: #FFFFFF;
+        }
+    }
+    
+    .MainBottom{
+        display:flex;
+        flex-direction: column;
+        max-width: 1180px;
+        margin: 0 auto;
+
+        .ListasMain{
+            padding: 0 8px;
+
+            h4{
+                line-height: 26px;
+                font-weight: 700;
+                font-size: 11px;
+            }
+
+            ol{
+                padding-bottom: 16px;
+
+                li{
+                    display: inline-block;
+                    margin-right: 16px;
+                    height: 24px;
+
+                    a{
+                        font-size: 11px;
+                        font-weight: 700;
+                        color: #66676C;
+                        text-decoration: underline;
                     }
                 }
             }
         }
-    
     }
 
-            .Anuncios{
-                justify-content: space-between;
-                padding:16px;
+}
 
-                img{
-                    max-width: calc(100% - 16px);
-                    max-height: 360px;
-                    border-radius: 4px;
-                }
-            }
-
-    /*FOOTER*/
-
-        footer{
-            display: block;
-            width: 100% ;
-            background-color: #EBECEF;
-            padding: 48px 0;
-
-            .footercontent{
-                display: flex;
-                justify-content: space-between;
-                max-width: 1240px;
-                margin:auto; /*Centers the section*/
-                flex-flow: row wrap;
-
-                a{
-                    display: flex;
-                    margin-top: 12px;
-                    margin-bottom: 12px;
-                    font-size: 12px;
-                    align-items: center;
-                    text-decoration: none;
-                    color: inherit;
-                }
-
-                article{
-                    margin: 0 16px;
-                    flex-basis: calc(25% - 32px);
-                }
-
-                p{
-                    display: flex;
-                    font-size: 12px;
-                    align-items: center;
-                    color: inherit;
-                }
-
-                img{
-                    margin-right: 8px;
-                }
-
-                ul{
-                    list-style: none;
-                }
-            }
-
-            h6{
-                font-size: 20px;
-                line-height: 22px;
-                font-weight: 500;
-                color: #020309;
-                margin: 0;
-                margin-bottom: 16px;
-                margin-top: 16px;
-            }
-
-            #ColunaTituloAbaixo{
-                margin-top: 48px;
-            } 
-            
-            //Linha centralizada
-            span{ 
-                height: 1px;
-                width: 50%;
-                border-top: 1px solid #DCDDE0;
-                margin: 48px auto;
-                text-align: center;
-            }
-
-            .footerbottom{
-                min-width: calc(100% - 16px);
-                margin: 0 auto;
-                
-                p{
-                    font-size: 16px;
-                    line-height: 20px;
-                    text-align: center;
-                    margin-bottom: 24px;
-                    justify-content: center;
-                }
-
-                //Google play e App Store
-                div{
-                    display: flex;
-                    justify-content: center;
-                }
-
-                
-            }
-        }   
-
-    /*MEDIA QUERRIES*/
-
-    @media (max-width: 576px){
-        main{
-            .BarraAzul{
-                flex-direction: column;
-                height: 110px;
-                h4{
-                    margin-bottom: 16px;
-                }
-                
-                a{
-                    width: 100%;
-                }
-                
-            }
-        }
-
-        footer{
-            .footercontent{
-                flex-flow: column wrap;
-                flex-basis: 100%;
-                margin: 16px 16px;
-
-                span{
-                    width: 100%;
-                }
-            }
-        }
-    }
-
-    @media (max-width: 780px){
-
-            .pesquisa-desktop{
-                display: none;
-            }
-            .pesquisa-tablet{
-                display: inline-block!important;
-                width: 100%;
-                text-align: right;
-            }
-
-            .Anuncios{
-                overflow: scroll;
-                white-space: nowrap;
-                padding: 16px 8px;
-
-                img{
-                    max-height: 335px;
-                    max-width: 100%;
-                    margin: 0 8px;
-                }
-            }
-
-    }
-
-    @media (min-width: 781px){
         .Anuncios{
-            display:flex;
+            justify-content: space-between;
+            padding:16px;
+
+            img{
+                max-width: calc(100% - 16px);
+                max-height: 360px;
+                border-radius: 4px;
+            }
+        }
+
+/*FOOTER*/
+
+    footer{
+        display: block;
+        width: 100% ;
+        background-color: #EBECEF;
+        padding: 48px 0;
+
+        .footercontent{
+            display: flex;
+            justify-content: space-between;
+            max-width: 1240px;
+            margin:auto; /*Centers the section*/
+            flex-flow: row wrap;
+
+            a{
+                display: flex;
+                margin-top: 12px;
+                margin-bottom: 12px;
+                font-size: 12px;
+                align-items: center;
+                text-decoration: none;
+                color: inherit;
+            }
+
+            article{
+                margin: 0 16px;
+                flex-basis: calc(25% - 32px);
+            }
+
+            p{
+                display: flex;
+                font-size: 12px;
+                align-items: center;
+                color: inherit;
+            }
+
+            img{
+                margin-right: 8px;
+            }
+
+            ul{
+                list-style: none;
+            }
+        }
+
+        h6{
+            font-size: 20px;
+            line-height: 22px;
+            font-weight: 500;
+            color: #020309;
+            margin: 0;
+            margin-bottom: 16px;
+            margin-top: 16px;
+        }
+
+        #ColunaTituloAbaixo{
+            margin-top: 48px;
+        } 
+        
+        //Linha centralizada
+        span{ 
+            height: 1px;
+            width: 50%;
+            border-top: 1px solid #DCDDE0;
+            margin: 48px auto;
+            text-align: center;
+        }
+
+        .footerbottom{
+            min-width: calc(100% - 16px);
+            margin: 0 auto;
+            
+            p{
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+                margin-bottom: 24px;
+                justify-content: center;
+            }
+
+            //Google play e App Store
+            div{
+                display: flex;
+                justify-content: center;
+            }
+
+            
+        }
+    }   
+
+/*MEDIA QUERRIES*/
+
+@media (max-width: 576px){
+    main{
+        .BarraAzul{
+            flex-direction: column;
+            height: 110px;
+            h4{
+                margin-bottom: 16px;
+            }
+            
+            a{
+                width: 100%;
+            }
+            
         }
     }
+
+    footer{
+        .footercontent{
+            flex-flow: column wrap;
+            flex-basis: 100%;
+            margin: 16px 16px;
+
+            span{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 780px){
+
+        .pesquisa-desktop{
+            display: none;
+        }
+        .pesquisa-tablet{
+            display: inline-block!important;
+            width: 100%;
+            text-align: right;
+        }
+
+        .Anuncios{
+            overflow: scroll;
+            white-space: nowrap;
+            padding: 16px 8px;
+
+            img{
+                max-height: 335px;
+                max-width: 100%;
+                margin: 0 8px;
+            }
+        }
+
+}
+
+@media (min-width: 781px){
+    .Anuncios{
+        display:flex;
+    }
+}
