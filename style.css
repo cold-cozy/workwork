@@ -111,7 +111,7 @@ main .CarrosNovos span {
   margin-left: 16px;
 }
 main .CarrosNovos img {
-  width: 16px;
+  width: 100% -16px;
   height: 16px;
   margin-left: 32px;
 }
@@ -172,12 +172,11 @@ main .MainBottom .ListasMain ol li a {
   color: #66676C;
   text-decoration: underline;
 }
-
-.Anuncios {
+main .Anuncios {
   justify-content: space-between;
   padding: 16px;
 }
-.Anuncios img {
+main .Anuncios img {
   max-width: calc(100% - 16px);
   max-height: 360px;
   border-radius: 4px;
