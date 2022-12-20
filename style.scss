@@ -1,17 +1,16 @@
-*{
+*, ::before, ::after{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: 0;
+}
 
+a{
+    text-decoration: none;
+}
 
-    a{
-        text-decoration: none;
-    }
-
-    ol, ul {
-        list-style: none;
-    }
+ol, ul {
+    list-style: none;
 }
 
 body{
@@ -35,16 +34,89 @@ header{
         align-items: center;
         width: 100%;
         padding:0 24px;
+
+        
+        .headerleft{
+            div{
+                display: flex;
+                align-items: center;
+            }
+
+            span{
+                color: #020309;
+                display: block;
+                font-size: 13px;
+                font-weight: 600;
+                line-height: 11px;
+                text-align: right;
+            }
+
+            #logo{
+                display: inline-block;
+                vertical-align: middle;
+                width: 100%;
+            }
+            
+
+            .badge{
+                display:flex;
+                margin-left:16px;
+
+                div{
+                    width: 31px;    
+                    height: 51px;
+                    margin-right: 8px;
+                }
+
+                p{
+                    color: #398B72;
+                    display: inline-block;
+                    width: 120px;
+                    font-size: 10px;
+                    line-height: 16px;
+                    font-weight: 700;
+                }
+
+            }
+
+
+        }
     }
 
     nav{
-        display: flex;
-        a, span,img{
+        display: block;
+
+        ul{
+            display: flex;
+            float: right;
+            padding: 13px 0;
+            height: 100%;
+            align-items: center;
+            margin-left: 15px;
+        }
+        
+        a{
+            display: flex;
+            align-items: center;  
             padding: 0 15px;
             color: #66676C;
             font-size: 13px;
-            display: flex;
-            align-items: center;
+
+            span{
+                margin-left: 10px;
+            }
+        }
+
+        #navNovo{
+            background: #C82814;
+            font-weight: 700;
+            padding: 0 3px;
+            border-radius: 4px;
+            margin-right: 10px;
+            font-size: 8px;
+            line-height: 16px;
+            height: 16px;
+            color: #FFFFFF;
         }
 
         button{
@@ -71,6 +143,32 @@ header{
             &:hover{
                 background-color: white;
                 color:#0071CE
+            }
+
+        }
+
+        div{
+            display: flex;
+            padding: 0 15px;
+
+            span{
+                font-size: 13px;
+                color: #66676C;
+            }
+        }
+
+        #loginorcreate{
+            a{
+                padding: 0!important;
+                margin-right: 4px;
+                margin-left: 8px;
+            }
+            div{
+                padding: 0 !important;
+                
+            }
+            img{
+                fill: #66676C;
             }
         }
         
@@ -196,6 +294,10 @@ main{
                         font-weight: 700;
                         color: #66676C;
                         text-decoration: underline;
+
+                        &:hover{
+                            text-decoration: none;
+                        }
                     }
                 }
             }

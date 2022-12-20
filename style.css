@@ -1,13 +1,15 @@
-* {
+*, ::before, ::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   border: 0;
 }
-* a {
+
+a {
   text-decoration: none;
 }
-* ol, * ul {
+
+ol, ul {
   list-style: none;
 }
 
@@ -33,15 +35,71 @@ header #headercontent {
   width: 100%;
   padding: 0 24px;
 }
-header nav {
+header #headercontent .headerleft div {
   display: flex;
+  align-items: center;
 }
-header nav a, header nav span, header nav img {
+header #headercontent .headerleft span {
+  color: #020309;
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 11px;
+  text-align: right;
+}
+header #headercontent .headerleft #logo {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+}
+header #headercontent .headerleft .badge {
+  display: flex;
+  margin-left: 16px;
+}
+header #headercontent .headerleft .badge div {
+  width: 31px;
+  height: 51px;
+  margin-right: 8px;
+}
+header #headercontent .headerleft .badge p {
+  color: #398B72;
+  display: inline-block;
+  width: 120px;
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 700;
+}
+header nav {
+  display: block;
+}
+header nav ul {
+  display: flex;
+  float: right;
+  padding: 13px 0;
+  height: 100%;
+  align-items: center;
+  margin-left: 15px;
+}
+header nav a {
+  display: flex;
+  align-items: center;
   padding: 0 15px;
   color: #66676C;
   font-size: 13px;
-  display: flex;
-  align-items: center;
+}
+header nav a span {
+  margin-left: 10px;
+}
+header nav #navNovo {
+  background: #C82814;
+  font-weight: 700;
+  padding: 0 3px;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-size: 8px;
+  line-height: 16px;
+  height: 16px;
+  color: #FFFFFF;
 }
 header nav button {
   padding: 3px 8px;
@@ -67,6 +125,25 @@ header nav button {
 header nav button:hover {
   background-color: white;
   color: #0071CE;
+}
+header nav div {
+  display: flex;
+  padding: 0 15px;
+}
+header nav div span {
+  font-size: 13px;
+  color: #66676C;
+}
+header nav #loginorcreate a {
+  padding: 0 !important;
+  margin-right: 4px;
+  margin-left: 8px;
+}
+header nav #loginorcreate div {
+  padding: 0 !important;
+}
+header nav #loginorcreate img {
+  fill: #66676C;
 }
 
 /*MAIN*/
@@ -171,6 +248,9 @@ main .MainBottom .ListasMain ol li a {
   font-weight: 700;
   color: #66676C;
   text-decoration: underline;
+}
+main .MainBottom .ListasMain ol li a:hover {
+  text-decoration: none;
 }
 main .Anuncios {
   justify-content: space-between;
