@@ -192,34 +192,179 @@ main .CarrosNovos img {
   height: 16px;
   margin-left: 32px;
 }
-main .BarraAzul {
+main .Principal {
+  width: 100%;
+  display: grid;
+  grid-gap: 24px 16px;
+  grid-template-columns: auto repeat(2, 581px) auto;
+  grid-template-rows: auto 1fr repeat(3, auto);
+}
+main .Principal .Banner {
+  display: block;
+  grid-column: 1/span 4;
+  grid-row: 1/span 3;
+}
+main .Principal .Banner img {
+  width: 100%;
+  height: 100%;
+}
+main .Principal .FormsBox1 {
+  grid-row: 2;
+  grid-column: 2;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: #0071CE;
-  color: white;
-  padding: 16px;
-  height: 92px;
-}
-main .BarraAzul h4 {
-  margin-right: 24px;
-  font: inherit;
-}
-main .BarraAzul a {
-  color: white;
-  text-decoration: none;
-  border: 2px solid white;
+  flex-direction: column;
+  min-height: 432px;
   border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  padding: 12px 46px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+  background-color: white;
 }
-main .BarraAzul a:hover {
-  padding: 9px 43px;
-  border: 5px solid;
-  border-color: rgb(255, 255, 255);
+main .Principal .FormsBox1 .FormsBox2 {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+main .Principal .FormsBox1 .FormsBox2 h1 {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  color: #020309;
+  margin-bottom: 16px;
+  line-height: unset;
+}
+main .Principal .FormsBox1 .FormsBox2 form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 2;
+}
+main .Principal .OportunidadeDoDia {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  grid-row: 4;
+  grid-column: 2;
+}
+main .Principal .OportunidadeDoDia img {
+  flex-basis: 285px;
+  min-height: 285px;
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  flex: 2 1;
+  flex-basis: 0%;
+  aspect-ratio: 4/3;
+}
+main .Principal .OportunidadeDoDia .ODDInfo {
+  padding: 16px;
+}
+main .Principal .OportunidadeDoDia .ODDInfo .ODD {
+  position: absolute;
+  top: 0;
+  left: 16px;
+  transform: translateY(-75%);
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-size: 1.375rem;
+  font-weight: 600;
+  background-color: #00A49F;
+}
+main .Principal .OportunidadeDoDia .ODDInfo h2 {
+  margin-bottom: 11px;
+  line-height: 1.18;
+  font-size: 22px;
+}
+main .TituloAnuncio {
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 700;
+  color: #020309;
+  margin: 0;
+  margin-bottom: 0px;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+main .AnuncioInfo {
+  display: flex;
+  flex-direction: column;
+  flex: 1 2 auto;
+  justify-content: flex-start;
+  position: relative;
+  color: #020309;
+}
+main .AnuncioUl {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+main .AnuncioUl li {
+  display: inline-block;
+  position: relative;
+  padding-right: 16px;
+}
+main .AnuncioUl ::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 2px;
+  background: #020309;
+  border-radius: 50%;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+}
+main .AnuncioUl :last-of-type ::after {
+  display: none;
+}
+main .Price {
+  line-height: 22px;
+  font-weight: 700;
+  font-size: 22px;
+  color: #C82814;
+  margin: 0;
+}
+main .Price sup {
+  padding-left: 4px;
+  font-size: 10px;
+  line-height: 20px;
+}
+main .AnunciosEmDestaque {
+  display: block;
+  grid-row: 4;
+  grid-column: 3;
+}
+main .AnunciosEmDestaque .DestaqueHeader {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+main .AnunciosEmDestaque .DestaqueHeader a {
+  text-decoration: underline;
+}
+main .AnunciosEmDestaque section {
+  display: flex;
+  flex-direction: wrap;
+  width: 100%;
+  overflow: visible;
+}
+main .AnunciosEmDestaque section a {
+  width: calc(50% - 8px);
+}
+main .AnunciosCarrosFundo {
+  grid-row: 6;
+  grid-column: 2/span 2;
+}
+main .AnunciosCarrosFundo #ACF {
+  overflow: visible;
+  display: flex;
+  width: 100%;
+  padding-bottom: 24px;
 }
 main .MainBottom {
   display: flex;
@@ -260,6 +405,35 @@ main .Anuncios img {
   max-width: calc(100% - 16px);
   max-height: 360px;
   border-radius: 4px;
+}
+main .BarraAzul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #0071CE;
+  color: white;
+  padding: 16px;
+  height: 92px;
+}
+main .BarraAzul h4 {
+  margin-right: 24px;
+  font: inherit;
+}
+main .BarraAzul a {
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 12px 46px;
+}
+main .BarraAzul a:hover {
+  padding: 9px 43px;
+  border: 5px solid;
+  border-color: rgb(255, 255, 255);
 }
 
 /*FOOTER*/
