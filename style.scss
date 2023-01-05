@@ -59,6 +59,7 @@ body{
             font-size: 20px;
             font-weight: 100;
             margin: 0 5px;
+            white-space: nowrap;
         }
     }
 
@@ -77,6 +78,7 @@ header{
     box-shadow: rgb(20 35 85 / 15%) 0px 2px 6px 0;
     top:0px;
     z-index: 2;
+
 
     #headercontent{
         display:flex;
@@ -99,6 +101,14 @@ header{
                 font-weight: 600;
                 line-height: 11px;
                 text-align: right;
+            }
+
+            #aLogo{
+                display: inline-block;
+                margin: 0;
+                overflow: hidden;
+                position: relative;
+                width: 202px;
             }
 
             #logo{
@@ -309,8 +319,7 @@ main{
                     letter-spacing: 0.5px;
                     font-size: 16px;
                     color: #020309;
-                    margin-bottom: 16px;
-                    line-height: unset;
+                    margin-bottom: 24px;
                 }
 
                 form{
@@ -318,6 +327,84 @@ main{
                     flex-direction: column;
                     justify-content: space-between;
                     flex-grow: 2;
+
+                    #optionsbox{
+                        display: flex;
+                        flex-flow: row wrap;
+                    }
+
+                    .option{
+                        width: calc(50% - 24px);
+                        margin-right: 24px;
+                        margin-bottom: 24px;
+
+                        p{
+                            font-size: 14px;
+                            line-height: 18px;
+                            font-weight: 600;
+                            color: #020309;
+                            margin-bottom: 8px;
+                        }
+                    }
+
+                    .inputbox{
+                        display: flex;
+                        border-radius: 4px;
+                        background-color: #EBECEF;
+                    }
+
+                    input{
+                        cursor: pointer;
+                        width: 100%;
+                        height: 44px;
+                        background: transparent;
+                        border: 0;
+                        caret-color: #020309;
+                        color: #66676C;
+                        flex: 1;
+                        font-size: 16px;
+                        line-height: 20px;
+                        outline: 0;
+                        padding-left: 16px;
+                    }
+                    button{
+                        display: flex;
+                        align-items: center;
+                        height: 44px;
+                        background: transparent;
+                        cursor: pointer;
+                        padding: 0 16px;
+                    }
+                    svg{
+                        height: 24px;
+                        width: 24px;
+                        color: #020309;
+                    }
+
+                    #submit{
+                        display: flex;
+                        width: calc(50% - 24px);
+                        justify-content: center;
+                        align-items: center;
+
+                        button{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            background-color: #C82814;
+                            border: 5px solid #C82814;
+                            color: white;
+                            border-radius: 4px;
+                            font-weight: 700;
+                            font-size: 16px;
+
+                            &:hover{
+                                background: white;
+                                color: #C82814;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -744,6 +831,27 @@ footer{
             }
         }
 
+        /*HEADER*/
+
+        #hamburguer{
+            height: 100%;
+            padding: 0 16px 0 0;
+            background: none;
+            border: 0;
+        }
+        .icon{
+            height: 22px;
+            width: 22px;
+            fill: #0071CE;
+        }
+
+        #n1carros{
+            display: none !important;
+        }
+
+        .nav-menu-item{
+            display: none !important;
+        }
 }
 
 @media (min-width: 781px){
@@ -755,6 +863,10 @@ footer{
 @media (max-width: 1280px){
 
     #loginorcreate2{
+        display: none !important;
+    }
+
+    .badge{
         display: none !important;
     }
 

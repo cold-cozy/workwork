@@ -55,6 +55,7 @@ body {
   font-size: 20px;
   font-weight: 100;
   margin: 0 5px;
+  white-space: nowrap;
 }
 
 #vendaMeio {
@@ -91,6 +92,13 @@ header #headercontent .headerleft span {
   font-weight: 600;
   line-height: 11px;
   text-align: right;
+}
+header #headercontent .headerleft #aLogo {
+  display: inline-block;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  width: 202px;
 }
 header #headercontent .headerleft #logo {
   display: inline-block;
@@ -259,14 +267,83 @@ main .Principal .FormsBox1 .FormsBox2 h1 {
   letter-spacing: 0.5px;
   font-size: 16px;
   color: #020309;
-  margin-bottom: 16px;
-  line-height: unset;
+  margin-bottom: 24px;
 }
 main .Principal .FormsBox1 .FormsBox2 form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 2;
+}
+main .Principal .FormsBox1 .FormsBox2 form #optionsbox {
+  display: flex;
+  flex-flow: row wrap;
+}
+main .Principal .FormsBox1 .FormsBox2 form .option {
+  width: calc(50% - 24px);
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+main .Principal .FormsBox1 .FormsBox2 form .option p {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #020309;
+  margin-bottom: 8px;
+}
+main .Principal .FormsBox1 .FormsBox2 form .inputbox {
+  display: flex;
+  border-radius: 4px;
+  background-color: #EBECEF;
+}
+main .Principal .FormsBox1 .FormsBox2 form input {
+  cursor: pointer;
+  width: 100%;
+  height: 44px;
+  background: transparent;
+  border: 0;
+  caret-color: #020309;
+  color: #66676C;
+  flex: 1;
+  font-size: 16px;
+  line-height: 20px;
+  outline: 0;
+  padding-left: 16px;
+}
+main .Principal .FormsBox1 .FormsBox2 form button {
+  display: flex;
+  align-items: center;
+  height: 44px;
+  background: transparent;
+  cursor: pointer;
+  padding: 0 16px;
+}
+main .Principal .FormsBox1 .FormsBox2 form svg {
+  height: 24px;
+  width: 24px;
+  color: #020309;
+}
+main .Principal .FormsBox1 .FormsBox2 form #submit {
+  display: flex;
+  width: calc(50% - 24px);
+  justify-content: center;
+  align-items: center;
+}
+main .Principal .FormsBox1 .FormsBox2 form #submit button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #C82814;
+  border: 5px solid #C82814;
+  color: white;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+}
+main .Principal .FormsBox1 .FormsBox2 form #submit button:hover {
+  background: white;
+  color: #C82814;
 }
 main .Principal .OportunidadeDoDia {
   display: flex;
@@ -616,6 +693,24 @@ footer .footerbottom div {
     max-width: 100% !important;
     margin: 0 8px;
   }
+  /*HEADER*/
+  #hamburguer {
+    height: 100%;
+    padding: 0 16px 0 0;
+    background: none;
+    border: 0;
+  }
+  .icon {
+    height: 22px;
+    width: 22px;
+    fill: #0071CE;
+  }
+  #n1carros {
+    display: none !important;
+  }
+  .nav-menu-item {
+    display: none !important;
+  }
 }
 @media (min-width: 781px) {
   .Anuncios {
@@ -624,6 +719,9 @@ footer .footerbottom div {
 }
 @media (max-width: 1280px) {
   #loginorcreate2 {
+    display: none !important;
+  }
+  .badge {
     display: none !important;
   }
   .Principal {
