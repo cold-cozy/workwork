@@ -3,8 +3,6 @@ const form = document.getElementById('forms');
     form.addEventListener('submit', function(event) {
         event.preventDefault();
 
-        document.getElementById('overlay').className = "overlayOn";
-
         const marca = form.elements['marca'].value;
         const modelo = form.elements['modelo'].value;
         const precoadquiricao = form.elements['precoadquiricao'].value;
@@ -29,7 +27,12 @@ const form = document.getElementById('forms');
         bomestado.innerHTML= Math.round(precofinal * 1) + ' €';
         muitobomestado.innerHTML= Math.round(precofinal * 1.1) + ' €';
 
-        
+        if(precofinal * 0.6 > 500) {
+            document.getElementById('overlay').className = "overlayOn";
+        }
+        else{
+            alert("Preço de venda inferior a 500€")
+        }
     });
 
     function desvalorizacao(anomatricula, quilometragem) {
