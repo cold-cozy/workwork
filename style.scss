@@ -232,95 +232,6 @@ main{
         }
     }
     
-    @media (max-width: 1280px){
-
-        #loginorcreate2{
-            display: none !important;
-        }
-
-        .Principal{
-            margin:0 8px;
-        }
-
-        .Banner{
-            display: none;
-        }
-
-        #separador{
-            width: 100%;
-            height: 4px;
-            background: #EBECEF;
-            margin-top: 15px;
-            margin-bottom: 15px;
-        }
-
-        #ACF{
-            overflow-x: scroll;
-            a{
-                margin-left: 16px;
-            }
-        }
-
-        #AED{
-            display: flex;
-            overflow-x: scroll;
-            width: 100%;
-            padding-bottom: 24px;
-            flex-wrap: nowrap;
-
-            a{
-                width: 312px;
-                margin-left: 16px;
-                margin-bottom: 16px;
-            }
-        }
-    }
-    
-    @media (min-width: 1281px){
-
-        #separador{
-            display: none;
-        }
-
-        .Principal{
-            width: 100%;
-            display: grid;
-            grid-gap: 24px 16px;
-            grid-template-columns: auto repeat(2, 581px) auto;
-            grid-template-rows: auto 1fr repeat(3, auto);
-    
-            .Banner{
-                display: block;
-                grid-column: 1/span 4;
-                grid-row: 1/span 3;
-            }
-    
-            .FormsBox1{
-                grid-row: 2;
-                grid-column: 2;
-            }
-    
-            .OportunidadeDoDia{
-                grid-row: 4;
-                grid-column: 2;
-            }
-    
-            .AnunciosEmDestaque{
-                grid-row: 4;
-                grid-column: 3;
-
-                section{
-                    flex-wrap: wrap;
-                }
-            }
-        
-            .AnunciosCarrosFundo{
-                grid-row: 6;
-                grid-column: 2/span 2;
-            }
-        }
-    }
-    
     .Principal{
         .Banner{
 
@@ -790,5 +701,94 @@ main{
 @media (min-width: 781px){
     .Anuncios{
         display:flex;
+    }
+}
+
+@media (max-width: 1280px){
+
+    #loginorcreate2{
+        display: none !important;
+    }
+
+    .Principal{
+        margin:0 8px;
+    }
+
+    .Banner{
+        display: none;
+    }
+
+    #separador{
+        width: 100%;
+        height: 4px;
+        background: #EBECEF;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    #ACF{
+        overflow-x: scroll;
+        a{
+            margin-left: 16px;
+        }
+    }
+
+    #AED{
+        display: flex;
+        overflow-x: scroll;
+        width: 100%;
+        padding-bottom: 24px;
+        flex-wrap: nowrap;
+
+        a{
+            width: 312px;
+            margin-left: 16px;
+            margin-bottom: 16px;
+        }
+    }
+}
+
+@media (min-width: 1281px){
+
+    #separador{
+        display: none;
+    }
+
+    .Principal{
+        width: 100%;
+        display: grid;
+        grid-gap: 24px 16px;
+        grid-template-columns: auto repeat(2, 581px) auto;
+        grid-template-rows: auto 1fr repeat(3, auto);
+
+        .Banner{
+            display: block;
+            grid-column: 1/span 4;
+            grid-row: 1/span 3;
+        }
+
+        .FormsBox1{
+            grid-row: 2;
+            grid-column: 2;
+        }
+
+        .OportunidadeDoDia{
+            grid-row: 4;
+            grid-column: 2;
+        }
+
+        .AnunciosEmDestaque{
+            grid-row: 4;
+            grid-column: 3;
+
+            section{
+                flex-wrap: wrap;
+            }
+        }
+    
+        .AnunciosCarrosFundo{
+            grid-row: 6;
+            grid-column: 2/span 2;
+        }
     }
 }
