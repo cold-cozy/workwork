@@ -192,25 +192,83 @@ main .CarrosNovos img {
   height: 16px;
   margin-left: 32px;
 }
-main .Principal {
-  width: 100%;
-  display: grid;
-  grid-gap: 24px 16px;
-  grid-template-columns: auto repeat(2, 581px) auto;
-  grid-template-rows: auto 1fr repeat(3, auto);
+@media (max-width: 1280px) {
+  main #loginorcreate2 {
+    display: none !important;
+  }
+  main .Principal {
+    margin: 0 8px;
+  }
+  main .Banner {
+    display: none;
+  }
+  main #separador {
+    width: 100%;
+    height: 4px;
+    background: #EBECEF;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  main #ACF {
+    overflow-x: scroll;
+  }
+  main #ACF a {
+    margin-left: 16px;
+  }
+  main #AED {
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+    padding-bottom: 24px;
+    flex-wrap: nowrap;
+  }
+  main #AED a {
+    width: 312px;
+    margin-left: 16px;
+    margin-bottom: 16px;
+  }
 }
-main .Principal .Banner {
-  display: block;
-  grid-column: 1/span 4;
-  grid-row: 1/span 3;
+@media (min-width: 1281px) {
+  main #separador {
+    display: none;
+  }
+  main .Principal {
+    width: 100%;
+    display: grid;
+    grid-gap: 24px 16px;
+    grid-template-columns: auto repeat(2, 581px) auto;
+    grid-template-rows: auto 1fr repeat(3, auto);
+  }
+  main .Principal .Banner {
+    display: block;
+    grid-column: 1/span 4;
+    grid-row: 1/span 3;
+  }
+  main .Principal .FormsBox1 {
+    grid-row: 2;
+    grid-column: 2;
+  }
+  main .Principal .OportunidadeDoDia {
+    grid-row: 4;
+    grid-column: 2;
+  }
+  main .Principal .AnunciosEmDestaque {
+    grid-row: 4;
+    grid-column: 3;
+  }
+  main .Principal .AnunciosEmDestaque section {
+    flex-wrap: wrap;
+  }
+  main .Principal .AnunciosCarrosFundo {
+    grid-row: 6;
+    grid-column: 2/span 2;
+  }
 }
 main .Principal .Banner img {
   width: 100%;
   height: 100%;
 }
 main .Principal .FormsBox1 {
-  grid-row: 2;
-  grid-column: 2;
   display: flex;
   flex-direction: column;
   min-height: 432px;
@@ -259,6 +317,7 @@ main .Principal .OportunidadeDoDia img {
 }
 main .Principal .OportunidadeDoDia .ODDInfo {
   padding: 16px;
+  position: relative;
 }
 main .Principal .OportunidadeDoDia .ODDInfo .ODD {
   position: absolute;
@@ -269,15 +328,81 @@ main .Principal .OportunidadeDoDia .ODDInfo .ODD {
   border-radius: 4px;
   color: #FFFFFF;
   font-size: 1.375rem;
-  font-weight: 600;
+  font-weight: 700;
   background-color: #00A49F;
 }
 main .Principal .OportunidadeDoDia .ODDInfo h2 {
   margin-bottom: 11px;
   line-height: 1.18;
-  font-size: 22px;
+  font-size: 26px;
+}
+main .Principal .OportunidadeDoDia .ODDInfo li {
+  font-weight: 600;
+}
+main .Principal .AnunciosEmDestaque .DestaqueHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+main .Principal .AnunciosEmDestaque .DestaqueHeader h2 {
+  font-size: 24px;
+}
+main .Principal .AnunciosEmDestaque .DestaqueHeader a {
+  text-decoration: underline;
+  font-size: 20px;
+  color: #0071CE;
+}
+main .Principal .AnunciosEmDestaque section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+main .Principal .AnunciosEmDestaque section a {
+  width: calc(50% - 8px);
+  margin-bottom: 16px;
+}
+main .Principal .AnunciosEmDestaque section a article {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  color: #020309;
+  background: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+}
+main .Principal .AnunciosEmDestaque section img {
+  max-height: 208px;
+  flex-basis: 208px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 4/3;
+}
+main .Principal .AnunciosCarrosFundo #ACF {
+  display: flex;
+  width: 100%;
+  padding-bottom: 24px;
+  justify-content: space-between;
+}
+main .Principal .AnunciosCarrosFundo #ACF a {
+  width: 184px;
+}
+main .Principal .AnunciosCarrosFundo #ACF a article {
+  height: 100%;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  color: #020309;
+  background: #FFFFFF;
+  border-radius: 4px;
+}
+main .Principal .AnunciosCarrosFundo #ACF a article img {
+  max-height: 131px;
+  flex-basis: 131px;
+  width: 100%;
+  height: auto;
 }
 main .TituloAnuncio {
+  width: 100%;
   font-size: 22px;
   line-height: 34px;
   font-weight: 700;
@@ -293,14 +418,14 @@ main .AnuncioInfo {
   display: flex;
   flex-direction: column;
   flex: 1 2 auto;
-  justify-content: flex-start;
-  position: relative;
-  color: #020309;
+  padding: 8px;
+  justify-content: space-between;
 }
 main .AnuncioUl {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 8px;
+  color: #020309;
 }
 main .AnuncioUl li {
   display: inline-block;
@@ -329,42 +454,10 @@ main .Price {
   color: #C82814;
   margin: 0;
 }
-main .Price sup {
+main .Price sub {
   padding-left: 4px;
   font-size: 10px;
   line-height: 20px;
-}
-main .AnunciosEmDestaque {
-  display: block;
-  grid-row: 4;
-  grid-column: 3;
-}
-main .AnunciosEmDestaque .DestaqueHeader {
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-}
-main .AnunciosEmDestaque .DestaqueHeader a {
-  text-decoration: underline;
-}
-main .AnunciosEmDestaque section {
-  display: flex;
-  flex-direction: wrap;
-  width: 100%;
-  overflow: visible;
-}
-main .AnunciosEmDestaque section a {
-  width: calc(50% - 8px);
-}
-main .AnunciosCarrosFundo {
-  grid-row: 6;
-  grid-column: 2/span 2;
-}
-main .AnunciosCarrosFundo #ACF {
-  overflow: visible;
-  display: flex;
-  width: 100%;
-  padding-bottom: 24px;
 }
 main .MainBottom {
   display: flex;
@@ -555,62 +648,4 @@ footer .footerbottom div {
   .Anuncios {
     display: flex;
   }
-}
-.nav {
-  display: block;
-  font: 13px Helvetica, Tahoma, serif;
-  margin: 0;
-  padding: 0;
-}
-
-.nav li {
-  display: inline-block;
-  list-style: none;
-}
-
-.nav .button-dropdown {
-  position: relative;
-}
-
-.nav li a {
-  display: block;
-  color: #333;
-  background-color: lightgray;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-
-.nav li a span {
-  display: inline-block;
-  margin-left: 5px;
-  font-size: 10px;
-  color: #999;
-}
-
-.nav li a:hover, .nav li a.dropdown-toggle.active {
-  font-weight: bold;
-  color: #020309;
-}
-
-.nav li a:hover span, .nav li a.dropdown-toggle.active span {
-  font-weight: bold;
-  color: #020309;
-}
-
-.nav li .dropdown-menu {
-  display: none;
-  position: absolute;
-  left: 0;
-  padding: 0;
-  margin: 0;
-  margin-top: 3px;
-  text-align: left;
-}
-
-.nav li .dropdown-menu.active {
-  display: block;
-}
-
-.nav li .dropdown-menu a {
-  width: 150px;
 }/*# sourceMappingURL=style.css.map */

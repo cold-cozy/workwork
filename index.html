@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comprar e vender carros usados | Standvirtual</title>
     <link rel="stylesheet" href="style.css">
-    <script src="logica.js"></script>
 </head>
 
 <body>
@@ -54,7 +53,7 @@
                     <li>
                         <div id="loginorcreate">
                             <a href="#"><img src="imgs/user-icon.svg" width="18" height="18"></a>
-                            <div>
+                            <div id="loginorcreate2">
                                 <a href="#">Login</a>
                                 <span>|</span>
                                 <a href="#">Criar Conta</a>
@@ -125,27 +124,17 @@
                             <h2 class="TituloAnuncio">Mercedes-Benz A 180 d AMG Line</h2>
                             <section>
                                 <ul class="AnuncioUl">
-                                    <li>
-                                        <span>2016</span>
-                                    </li>
-                                    <li>
-                                        <span>132 923 km</span>
-                                    </li>
-                                    <li>
-                                        <span>Diesel</span>
-                                    </li>
-                                    <li>
-                                        <span>Junho</span>
-                                    </li>
-                                    <li>
-                                        <span>109 cv</span>
-                                    </li>
+                                    <li>2016</li>
+                                    <li>132 923 km</li>
+                                    <li>Diesel</li>
+                                    <li>Junho</li>
+                                    <li>109 cv</li>
                                 </ul>
                             </section>
                             <section>
                                 <div class="Price">
                                     <span>22 900</span>
-                                    <sup>EUR</sup>
+                                    <sub>EUR</sub>
                                 </div>
                             </section>
                         </section>
@@ -153,12 +142,14 @@
                 </a>
             </section>
 
+            <div id="separador"></div>
+
             <section class="AnunciosEmDestaque">
                 <div class="DestaqueHeader">
                     <h2>Anúncios em destaque</h2>
                     <a href="#">Ver todos</a>
                 </div>
-                <section>
+                <section id="AED">
                     <a href="#">
                         <article>
                             <img src="https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im1zcXc3N2tubzRxNTItU1REVlRMUFQiLCJ3IjpbeyJmbiI6IjZtZ2p3bHA3a2dkYjItU1REVlRMUFQiLCJzIjoiMTYiLCJwIjoiMTAsLTEwIiwiYSI6IjAifV19.nkrtg-mzYWR553wW8z8yHRVYUfm6aiZLGJo7via0A_U/image;s=320x240">
@@ -179,7 +170,7 @@
                                     <section>
                                         <div class="Price">
                                             <span>77 500</span>
-                                            <sup>EUR</sup>
+                                            <sub>EUR</sub>
                                         </div>
                                     </section>
                                 </section>
@@ -188,17 +179,17 @@
                     </a>
                     <a href="#">
                         <article>
-                            <img src="https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InplOXJxZXhyc2xnbjEtU1REVlRMUFQiLCJ3IjpbeyJmbiI6IjZtZ2p3bHA3a2dkYjItU1REVlRMUFQiLCJzIjoiMTYiLCJwIjoiMTAsLTEwIiwiYSI6IjAifV19.3R7-e4nbQtlNNVhAHfDEtsbNKSf5KFSXWNF-TwrK58w/image;s=320x240">
+                            <img src="https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InIzaTM2Nnp4Mm5hbjEtU1REVlRMUFQiLCJ3IjpbeyJmbiI6IjZtZ2p3bHA3a2dkYjItU1REVlRMUFQiLCJzIjoiMTYiLCJwIjoiMTAsLTEwIiwiYSI6IjAifV19.sdo8L4VR2lrML4O__cdGMeOPM2yXCY8neFKSw5847fI/image;s=320x240">
                             <section class="AnuncioInfo">
                                 <div>
-                                    <h2 class="TituloAnuncio">Toyota RAV4 2.5 HDF Square Collection</h2>
+                                    <h2 class="TituloAnuncio">Volvo XC 40 2.0 D3</h2>
                                     <section>
                                         <ul class="AnuncioUl">
                                             <li>2020</li>
                                             <li>10 765 km</li>
-                                            <li>Híbrido (Gasolina)</li>
+                                            <li>Diesel</li>
                                             <li>Outubro</li>
-                                            <li>218 cv</li>
+                                            <li>150 cv</li>
                                         </ul>
                                     </section>
                                 </div>
@@ -206,7 +197,7 @@
                                     <section>
                                         <div class="Price">
                                             <span>49 890</span>
-                                            <sup>EUR</sup>
+                                            <sub>EUR</sub>
                                         </div>
                                     </section>
                                 </section>
@@ -219,7 +210,7 @@
                             <section class="AnuncioInfo">
                                 <div>
                                     <h2 class="TituloAnuncio">Porsche Panamera S</h2>
-                                    <section class="AnuncioInfo">
+                                    <section>
                                         <ul class="AnuncioUl">
                                             <li>2011</li>
                                             <li>282 000 km</li>
@@ -233,7 +224,7 @@
                                     <section>
                                         <div class="Price">
                                             <span>34 950</span>
-                                            <sup>EUR</sup>
+                                            <sub>EUR</sub>
                                         </div>
                                     </section>
                                 </section>
@@ -246,7 +237,7 @@
                             <section class="AnuncioInfo">
                                 <div>
                                     <h2 class="TituloAnuncio">Tesla Model S</h2>
-                                    <section class="AnuncioInfo">
+                                    <section>
                                         <ul class="AnuncioUl">
                                             <li>2017</li>
                                             <li>131 000 km</li>
@@ -260,7 +251,7 @@
                                     <section>
                                         <div class="Price">
                                             <span>44 990</span>
-                                            <sup>EUR</sup>
+                                            <sub>EUR</sub>
                                         </div>
                                     </section>
                                 </section>
@@ -292,7 +283,7 @@
                                     <section>
                                         <div class="Price">
                                             <span>21 900</span>
-                                            <sup>EUR</sup>
+                                            <sub>EUR</sub>
                                         </div>
                                     </section>
                                 </section>
@@ -319,7 +310,7 @@
                                     <section>
                                         <div class="Price">
                                             <span>99 500</span>
-                                            <sup>EUR</sup>
+                                            <sub>EUR</sub>
                                         </div>
                                     </section>
                                 </section>
@@ -346,7 +337,7 @@
                                     <section>
                                         <div class="Price">
                                             <span>49 000</span>
-                                            <sup>EUR</sup>
+                                            <sub>EUR</sub>
                                         </div>
                                     </section>
                                 </section>
@@ -373,7 +364,7 @@
                                     <section>
                                         <div class="Price">
                                             <span>48 990</span>
-                                            <sup>EUR</sup>
+                                            <sub>EUR</sub>
                                         </div>
                                     </section>
                                 </section>
@@ -400,7 +391,7 @@
                                     <section>
                                         <div class="Price">
                                             <span>23 550</span>
-                                            <sup>EUR</sup>
+                                            <sub>EUR</sub>
                                         </div>
                                     </section>
                                 </section>
@@ -427,7 +418,7 @@
                                     <section>
                                         <div class="Price">
                                             <span>37 400</span>
-                                            <sup>EUR</sup>
+                                            <sub>EUR</sub>
                                         </div>
                                     </section>
                                 </section>
@@ -437,6 +428,7 @@
                     
                 </section>
             </section>
+
         </div>
 
         <div class="MainBottom">
