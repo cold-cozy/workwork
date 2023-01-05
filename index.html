@@ -11,6 +11,23 @@
 
 <body>
 
+    <div id="overlay" class="overlayOff">
+        <div id="vendaMenu">
+            <div>
+                <h1>Mau Estado</h1>
+                <p id="MauEstado"></p>
+            </div>
+            <div id="vendaMeio">
+                <h1>Bom Estado</h1>
+                <p id="BomEstado"></p>
+            </div>
+            <div>
+                <h1>Muito Bom Estado</h1>
+                <p id="MuitoBomEstado"></p>
+            </div>
+        </div>
+    </div>
+
     <header>
         <div id="headercontent">
             <div class="headerleft">
@@ -103,11 +120,45 @@
                 <fieldset>
                     <div class="FormsBox2">
                         <h1>O que procura?</h1>
-                        <form>                                    
-                                <div>Preço</div>
-                                <div>Ano</div>
-                                <div>Combustivel</div>
-                                <div>Quilómetros</div>
+                        <form id="forms">
+                            <div>
+                                <div>
+                                    <div>
+                                        <p>Marca</p>
+                                        <div class="option">
+                                            <input placeholder="Marca" id="marca">
+                                            <button type="button">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em"><path fill="currentColor" fill-rule="evenodd" d="M2.001 6.5h1.414l1.27 1.271 7.316 7.315 7.315-7.315L20.587 6.5h1.414v1.414l-1.27 1.27-7.316 7.316-1 1h-.827l-3.942-3.942-4.374-4.374-1.27-1.27z"></path></svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Modelo</p>
+                                    <div>
+                                        <input placeholder="Modelo" id="modelo">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Preço de Aquisição</p>
+                                    <div>
+                                        <input placeholder="Preço de Aquisição" id="precoadquiricao">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Ano da Matricula</p>
+                                    <div>
+                                        <input placeholder="Ano da Matricula" id="anomatricula">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Quilometragrem</p>
+                                    <div>
+                                        <input placeholder="Quilometragrem" id="quilometragem">
+                                    </div>
+                                </div>
+                                <button type="submit">Submit</button>
+                            </div>
                         </form>
                     </div>
                 </fieldset>
@@ -428,7 +479,6 @@
                     
                 </section>
             </section>
-
         </div>
 
         <div class="MainBottom">
