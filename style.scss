@@ -363,6 +363,16 @@ main{
                     flex-grow: 1;
                     border-right: 1px solid rgba(0, 0, 0, 0.151);
                     background: #f8f8fd;
+                    cursor: pointer;
+
+                    &:hover{
+                        svg{
+                            fill: #0071CE;
+                        }
+                        p{
+                            color: #0071CE;
+                        }
+                    }
 
                     &:last-child{
                         border: 0;

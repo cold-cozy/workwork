@@ -309,6 +309,13 @@ main .Principal .FormsBox1 ul li {
   flex-grow: 1;
   border-right: 1px solid rgba(0, 0, 0, 0.151);
   background: #f8f8fd;
+  cursor: pointer;
+}
+main .Principal .FormsBox1 ul li:hover svg {
+  fill: #0071CE;
+}
+main .Principal .FormsBox1 ul li:hover p {
+  color: #0071CE;
 }
 main .Principal .FormsBox1 ul li:last-child {
   border: 0;
