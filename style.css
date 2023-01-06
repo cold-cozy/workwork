@@ -313,6 +313,15 @@ main .Principal .FormsBox1 ul li {
 main .Principal .FormsBox1 ul li:last-child {
   border: 0;
 }
+main .Principal .FormsBox1 ul li:first-child {
+  background: white;
+}
+main .Principal .FormsBox1 ul li:first-child svg {
+  fill: #0071CE;
+}
+main .Principal .FormsBox1 ul li:first-child p {
+  color: #0071CE;
+}
 main .Principal .FormsBox1 ul svg {
   width: 32px;
   height: 32px;

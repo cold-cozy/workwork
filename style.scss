@@ -367,6 +367,15 @@ main{
                     &:last-child{
                         border: 0;
                     }
+                    &:first-child{
+                        background: white;
+                        svg{
+                            fill: #0071CE;
+                        }
+                        p{
+                            color: #0071CE;
+                        }
+                    }
                 }
 
                 svg{
