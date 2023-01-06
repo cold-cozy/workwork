@@ -38,6 +38,12 @@ body {
   cursor: pointer;
 }
 
+#overlaymenu {
+  background-color: white;
+  padding: 16px;
+  border-radius: 4px;
+}
+
 #vendaMenu {
   display: flex;
 }
