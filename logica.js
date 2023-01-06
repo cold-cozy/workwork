@@ -19,13 +19,17 @@ form.addEventListener('submit', function(event) {
     precofinal = Math.round(precofinal);
     console.log("Preço final:", precofinal);
     
-    let mauestado = document.querySelector('#MauEstado');
-    let bomestado = document.querySelector('#BomEstado');
-    let muitobomestado = document.querySelector('#MuitoBomEstado');
+    document.querySelector('#MauEstado').innerHTML= Math.round(precofinal * 0.6) + ' €'; 
+    document.querySelector('#BomEstado').innerHTML= Math.round(precofinal * 1) + ' €';
+    document.querySelector('#MuitoBomEstado').innerHTML= Math.round(precofinal * 1.1) + ' €';
 
-    mauestado.innerHTML= Math.round(precofinal * 0.6) + ' €'; 
-    bomestado.innerHTML= Math.round(precofinal * 1) + ' €';
-    muitobomestado.innerHTML= Math.round(precofinal * 1.1) + ' €';
+    for (let i = 0; i < 3; ++i) {
+        document.querySelectorAll(".MarcaInfo")[i].innerHTML = ('Marca: ' + marca);
+        document.querySelectorAll(".ModeloInfo")[i].innerHTML = ('Modelo: ' + modelo);
+        document.querySelectorAll(".MatriculaInfo")[i].innerHTML = ('Ano: ' + anomatricula);
+        document.querySelectorAll(".QuilometragemInfo")[i].innerHTML = ('Km: ' + quilometragem);
+        document.querySelectorAll(".AdquiricaoInfo")[i].innerHTML = ('Adquirição: ' + precoadquiricao + ' €');
+    }
 
     if(precofinal * 0.6 > 500) {
         document.getElementById('overlay').className = "overlayOn";
@@ -60,3 +64,6 @@ function desvalorizacao(anomatricula, quilometragem) {
 
     return [c1, c2];
 }
+
+
+

@@ -42,36 +42,67 @@ body{
     }
 
     #overlaymenu{
+        display: flex;
         background-color: white;
         padding: 16px;
         border-radius: 4px;
+        height: 33%;
     }
 
     #vendaMenu{
         display: flex;
 
-        div{
+        .infoEstimativa{
+            display:none;
+        }
+
+        .Estado {
             display:flex;
             flex: 1;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            width: 20%;
+            width: 30%;
             background-color: transparent;
+            margin:0 4px;
             padding: 30px 40px;
+            font-family: sans-serif;
+
+            p{
+                margin-top: 40px;
+                font-size: 23.4px; 
+                font-family: sans-serif;
+            }
+
+            &:hover{
+                border-radius: 10px;
+                background-color: rgba(0, 0, 0, 0.123);
+                .infoEstimativa{
+                    display:flex !important;
+                    flex-direction: column;
+                    white-space: nowrap;
+                }
+                p{
+                    margin-top: 0px;
+                }
+            }
         }
 
         h1{
             font-size: 20px;
-            font-weight: 100;
+            font-weight: 700;
             margin: 0 5px;
+            margin-bottom: 16px;
             white-space: nowrap;
+            width: 145px;
+            text-align: center;
         }
     }
 
     #vendaMeio{
-        border-left: 1px solid gray ;
-        border-right: 1px solid gray;
+        display: flex;
+        width: 33%;
+        border-left: 1px solid black ;
+        border-right: 1px solid black;
     }
 
     /*HEADER*/
@@ -314,6 +345,37 @@ main{
             border-radius: 4px;
             box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
             background-color: white;
+
+            ul{
+                display: flex;
+                width: 100%;
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    flex-grow: 1;
+                    border-right: 1px solid rgba(0, 0, 0, 0.151);
+                    background: #f8f8fd;
+
+                    &:last-child{
+                        border: 0;
+                    }
+                }
+
+                svg{
+                    width: 32px;
+                    height: 32px;
+                    margin-bottom: 1px;
+                }
+
+                p{
+                    margin-bottom: 12px;
+                }
+                #Outros{
+                    margin-bottom: 0px;
+                }
+            }
             
             .FormsBox2{
                 display: flex;
